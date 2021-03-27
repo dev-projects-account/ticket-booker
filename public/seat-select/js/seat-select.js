@@ -133,18 +133,4 @@ const handleConfirmSeat = (event) => {
         });
 };
 
-//const seeReservationPage = function () {
-//  fetch("/reservations/:email", {
-//     method: "GET",
-//     headers: {
-//         Accept: "application/json",
-//         "Content-Type": "application/json",
-//     },
-// }).then((res) => {
-//    window.location = `/view-reservation.html?email=${email}`;
-//});
-//};
-
-//seeReservationPage();
-
 flightInput.addEventListener("blur", toggleFormContent);
