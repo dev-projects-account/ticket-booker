@@ -67,7 +67,6 @@ express()
     .get("/users/:email", (req, res) => {
         const { email } = req.params;
         let foundReservation = reservations[reservations.length - 1];
-        console.log(foundReservation.id);
         res.json({
             email: foundReservation.email,
             surname: foundReservation.surname,
@@ -90,7 +89,6 @@ express()
             surname: surname,
             email: email,
         });
-        console.log(reservations);
         res.json({ status: "success" });
     })
     .use((req, res) => res.send("Not Found"))
