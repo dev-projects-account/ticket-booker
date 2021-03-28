@@ -27,5 +27,4 @@ const viewReservations = function () {
             resEmail.innerText = email;
         });
 };
-console.log(reservations);
 viewReservations();

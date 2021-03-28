@@ -26,7 +26,6 @@ const getReservations = (req, res) => {
     let { email } = req.params;
     let foundReservations = reservations.forEach((object) => {
         if (object.email === email) {
-            console.log(object);
             res.json({
                 id: object.id,
                 flight: object.flight,

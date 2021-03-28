@@ -28,5 +28,4 @@ fetch("/users/" + email, {
         resSeat.innerText = seat;
         resFlight.innerText = flight;
         resEmail.innerText = email;
-        console.log("done");
     });

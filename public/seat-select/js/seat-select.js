@@ -81,7 +81,6 @@ const renderSeats = () => {
 
 const toggleFormContent = (event) => {
     const flightNumber = flightInput.value;
-    console.log("toggleFormContent: ", flightNumber);
     fetch(`/flights/${flightNumber}`)
         .then((res) => res.json())
         .then((data) => {
@@ -96,7 +95,6 @@ const toggleFormContent = (event) => {
         });
         let parsed = await response.json();
         let flightArray = Object.values(parsed);
-        console.log(parsed.flights[`${flightNumber}`]);
     };
     openSeats();
     // TODO: contact the server to get the seating availability
@@ -125,7 +123,6 @@ const handleConfirmSeat = (event) => {
     })
         .then((res) => res.json())
         .then((res) => {
-            console.log(selection);
             let email = document.getElementById("email").value;
             let surname = document.getElementById("surname").value;
             let givenName = document.getElementById("givenName").value;
